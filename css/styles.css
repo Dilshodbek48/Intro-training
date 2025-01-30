@@ -1,0 +1,264 @@
+:root {
+  --primary: #fff;
+  --accent-color: #000;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("../fonts/Inter18pt-Regular.woff2") format("woff2"),
+    url("../fonts/Inter18pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("../fonts/") format("woff2"),
+    url("../fonts/Inter18pt-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("../fonts/Inter18pt-Bold.woff2") format("woff2"),
+    url("../fonts/Inter18pt-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter 18pt";
+  src: url("../fonts/Inter18pt-Medium.woff2") format("woff2"),
+    url("../fonts/Inter18pt-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: 2px dashed #4dc490;
+  outline-offset: 3px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Inter", "Arial", sans-serif;
+  scroll-behavior: smooth;
+  color: var(--primary);
+  background-color: #d3d2d2ac;
+
+}
+
+.container {
+  max-width: 1192px;
+  width: 100%;
+  padding: 30px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-page {
+  display: flex;
+}
+
+.contact-page-content {
+  margin-right: 12px;
+}
+
+.contact-page-source {
+  display: flex;
+  width: 570px;
+  padding: 55px;
+  padding-bottom: 0;
+  background-image: url(../img/main-photo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contact-page-heading-main {
+  margin: 0;
+  margin-bottom: 60px;
+  width: 178px;
+  opacity: 80%;
+}
+
+.contact-page-source-link {
+  padding: 5px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 41px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-page-source-link:hover {
+  border: 1px solid #4dc490;
+  border-radius: 41px;
+  opacity: 0.8;
+}
+
+.contact-page-source-link:active {
+  border: 1px solid #4dc490;
+  border-radius: 41px;
+  opacity: 0.6;
+}
+
+.contact-heading-link:hover {
+  color: #4dc490;
+  opacity: 0.8;
+}
+
+.contact-heading-link:active {
+  color: #4dc490;
+  opacity: 0.6;
+}
+
+.contact-page-heading-learn {
+  width: 389px;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.contact-heading-link {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+
+
+.contact-page-heading-experience {
+  width: 347px;
+  margin: 0;
+  margin-bottom: 208px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.contact-page-button {
+  width: 100%;
+  background-color: #4dc490;
+  color: var(--primary);
+  font-size: 19px;
+  font-weight: 500;
+  padding: 29px 145px;
+  border: 0;
+}
+
+.contact-page-button:hover {
+  opacity: 0.8;
+}
+
+.contact-page-button:active {
+  opacity: 0.6;
+}
+
+.contact-page-registration {
+  width: 100%;
+  width: 570px;
+  padding: 55px 60px 40px;
+  background-color: var(--primary);
+}
+
+
+
+.registration-heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  color: var(--accent-color);
+  margin-top: 0;
+  margin-bottom: 79px;
+}
+
+.form-fields {
+  margin-bottom: 63px;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.form-field {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 11px;
+  border: 0;
+  border-bottom: 1px solid var(--accent-color);
+  font-size: 18px;
+  color: var(--accent-color);
+  outline-color: #655af2;
+  outline-offset: 3px;
+}
+
+.form-button {
+  outline-color: #655af2;
+  outline-offset: 3px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 149px;
+  margin-bottom: 10px;
+  color: var(--primary);
+  background-color: #655af2;
+  border-radius: 10px;
+  border: 0;
+}
+
+.form-button:hover {
+  opacity: 0.8;
+}
+
+.form-button:active {
+  opacity: 0.6;
+}
+
+.contact-page-terms-heading {
+  display: flex;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #555;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page-terms-link {
+  font-weight: 500;
+  color: #f03535;
+  outline-color: #f03535;
+  outline-offset: 3px;
+}
+
+.contact-page-terms-link:hover {
+  opacity: 0.8;
+}
+
+.contact-page-terms-link:active {
+  opacity: 0.6;
+}
